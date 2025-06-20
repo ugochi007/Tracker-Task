@@ -4,36 +4,36 @@ import { GraduationCap, Code, PencilRuler } from "lucide-react";
 
 const timeline = [
   {
-    title: "Senior Product Designer",
-    company: "TechCorp",
+    title: "Freelance Web Developer",
+    company: "Self-Employed",
     period: "2022 - Present",
-    description: "Leading design for multiple product lines, managing a team of 4 designers, and establishing design systems.",
-    icon: <GraduationCap className="w-6 h-6 text-white" />,
+    description: "Creating professional websites for new businesses, helping entrepreneurs establish their online presence and grow their customer base.",
+    icon: <Code className="w-6 h-6 text-white" />,
     color: "bg-brand-primary"
   },
   {
-    title: "UI/UX Designer & Frontend Dev",
-    company: "StartupXYZ",
-    period: "2020 - 2022",
-    description: "Wore multiple hats in a fast-paced startup environment, from wireframing to React development.",
-    icon: <Code className="w-6 h-6 text-white" />,
+    title: "Web Developer & Designer",
+    company: "Local Agency",
+    period: "2021 - 2022",
+    description: "Developed websites for small businesses and startups, gaining experience in client communication and project management.",
+    icon: <PencilRuler className="w-6 h-6 text-white" />,
     color: "bg-brand-secondary"
   },
   {
-    title: "Junior Designer",
-    company: "Design Agency",
-    period: "2019 - 2020",
-    description: "Started my career working on diverse client projects, learning the fundamentals of user-centered design.",
-    icon: <PencilRuler className="w-6 h-6 text-white" />,
+    title: "Junior Web Developer",
+    company: "Tech Startup",
+    period: "2020 - 2021",
+    description: "Started my career learning modern web technologies and best practices for building responsive, user-friendly websites.",
+    icon: <GraduationCap className="w-6 h-6 text-white" />,
     color: "bg-gray-800"
   }
 ];
 
 const skills = [
-  { name: "UI/UX Design", percentage: 95, color: "bg-brand-primary" },
-  { name: "Frontend Development", percentage: 90, color: "bg-brand-secondary" },
-  { name: "React/Next.js", percentage: 85, color: "bg-brand-primary" },
-  { name: "Product Strategy", percentage: 80, color: "bg-brand-secondary" }
+  { name: "Web Development", percentage: 95, color: "bg-brand-primary" },
+  { name: "Website Design", percentage: 90, color: "bg-brand-secondary" },
+  { name: "Responsive Design", percentage: 90, color: "bg-brand-primary" },
+  { name: "Business Websites", percentage: 85, color: "bg-brand-secondary" }
 ];
 
 const tools = [
@@ -57,8 +57,9 @@ export default function About() {
           >
             <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">About Me</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              With over 5 years of experience in design and development, I specialize in creating digital experiences 
-              that are both beautiful and functional. I believe great design should tell a story and solve real problems.
+              With over 3 years of experience in web development and design, I specialize in creating professional websites 
+              for new businesses. I help entrepreneurs and startups establish their online presence with modern, responsive websites 
+              that attract customers and drive business growth.
             </p>
           </motion.div>
 

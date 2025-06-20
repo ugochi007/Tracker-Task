@@ -19,7 +19,7 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-center md:text-left mb-4 md:mb-0">
               <div className="text-2xl font-bold text-white mb-2">Benedict</div>
-              <p className="text-gray-300">Product Designer & Frontend Developer</p>
+              <p className="text-gray-300">Web Developer & Designer for New Businesses</p>
             </div>
             
             <div className="flex items-center space-x-6">

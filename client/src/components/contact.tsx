@@ -13,7 +13,7 @@ const contactInfo = [
   {
     icon: <Mail className="w-6 h-6 text-white" />,
     title: "Email",
-    value: "benedict@example.com",
+    value: "benedictportfolios@gmail.com",
     color: "bg-brand-primary"
   },
   {
@@ -109,7 +109,7 @@ export default function Contact() {
           >
             <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Get In Touch</h2>
             <p className="text-xl text-gray-600">
-              Ready to work together? I'd love to hear about your project and discuss how we can bring your ideas to life.
+              Ready to launch your business online? Let's discuss your website needs and get your business the professional web presence it deserves.
             </p>
           </motion.div>
 
@@ -177,10 +177,10 @@ export default function Contact() {
                       <SelectValue placeholder="Select project type" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="ui-ux">UI/UX Design</SelectItem>
-                      <SelectItem value="frontend">Frontend Development</SelectItem>
-                      <SelectItem value="fullstack">Full Stack Project</SelectItem>
-                      <SelectItem value="consultation">Consultation</SelectItem>
+                      <SelectItem value="business-website">Business Website</SelectItem>
+                      <SelectItem value="ecommerce">E-commerce Store</SelectItem>
+                      <SelectItem value="landing-page">Landing Page</SelectItem>
+                      <SelectItem value="consultation">Website Consultation</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>

@@ -48,6 +48,7 @@ export default function Navbar() {
               { label: "Home", id: "hero" },
               { label: "Projects", id: "projects" },
               { label: "About", id: "about" },
+              { label: "Pricing", id: "pricing" },
               { label: "Contact", id: "contact" },
             ].map((item) => (
               <motion.button
@@ -86,6 +87,7 @@ export default function Navbar() {
               { label: "Home", id: "hero" },
               { label: "Projects", id: "projects" },
               { label: "About", id: "about" },
+              { label: "Pricing", id: "pricing" },
               { label: "Contact", id: "contact" },
             ].map((item) => (
               <button

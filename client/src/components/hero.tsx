@@ -36,18 +36,18 @@ export default function Hero() {
               <h1 className="text-5xl md:text-6xl font-extrabold text-brand-black mb-4">
                 Hi, I'm <span className="gradient-text">Benedict</span>
               </h1>
-              <p className="text-xl text-gray-600 mb-6">Product Designer & Frontend Enthusiast</p>
+              <p className="text-xl text-gray-600 mb-6">Web Developer & Designer for New Businesses</p>
               <p className="text-lg text-gray-500 mb-8 max-w-lg">
-                Crafting digital experiences that bridge the gap between beautiful design and functional development. 
-                I turn ideas into pixel-perfect realities.
+                I help new businesses establish their online presence with professional, modern websites. 
+                From concept to launch, I create websites that help your business grow.
               </p>
               
               {/* Skill Badges */}
               <div className="flex flex-wrap justify-center lg:justify-start gap-3 mb-8">
-                <BadgePill text="Product Design" variant="primary" />
-                <BadgePill text="UI/UX" variant="secondary" />
-                <BadgePill text="Frontend Dev" variant="dark" />
-                <BadgePill text="React" variant="light" />
+                <BadgePill text="Web Development" variant="primary" />
+                <BadgePill text="Website Design" variant="secondary" />
+                <BadgePill text="Business Sites" variant="dark" />
+                <BadgePill text="Responsive Design" variant="light" />
               </div>
 
               {/* CTA Buttons */}
@@ -90,7 +90,7 @@ export default function Hero() {
                 <FloatingCard
                   className="absolute -top-4 -right-4 animate-float"
                   icon={<Star className="w-6 h-6 text-white" />}
-                  value="4.9"
+                  value="5.0"
                   label="Client Rating"
                   bgColor="bg-brand-primary"
                 />
@@ -98,8 +98,8 @@ export default function Hero() {
                 <FloatingCard
                   className="absolute -bottom-6 -left-6 animate-float-reverse"
                   icon={<Users className="w-6 h-6 text-white" />}
-                  value="50+"
-                  label="Projects Delivered"
+                  value="25+"
+                  label="Websites Built"
                   bgColor="bg-brand-secondary"
                 />
 

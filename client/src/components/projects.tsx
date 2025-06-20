@@ -5,26 +5,26 @@ import { ExternalLink } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "E-commerce Platform",
-    description: "Complete redesign of a fashion e-commerce platform focusing on user experience and conversion optimization.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=300",
-    tags: ["UI/UX", "React"],
+    title: "Local Restaurant Website",
+    description: "Created a modern website for a new Italian restaurant featuring online menu, reservations, and location details to attract local customers.",
+    image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=300",
+    tags: ["Business Website", "Responsive"],
     link: "#"
   },
   {
     id: 2,
-    title: "FinTech Mobile App",
-    description: "Designed and developed a comprehensive financial management app with intuitive navigation and data visualization.",
-    image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=300",
-    tags: ["Mobile", "Flutter"],
+    title: "Fitness Studio Website",
+    description: "Built a professional website for a new fitness studio with class schedules, trainer profiles, and membership signup forms.",
+    image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=300",
+    tags: ["Business Website", "Forms"],
     link: "#"
   },
   {
     id: 3,
-    title: "Analytics Dashboard",
-    description: "Built a comprehensive analytics platform with real-time data visualization and reporting capabilities.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=300",
-    tags: ["Web App", "Vue.js"],
+    title: "Boutique E-commerce Store",
+    description: "Developed an online store for a new fashion boutique with product catalog, shopping cart, and secure payment processing.",
+    image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=300",
+    tags: ["E-commerce", "Payment"],
     link: "#"
   }
 ];
@@ -40,9 +40,9 @@ export default function Projects() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Featured Projects</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Recent Client Websites</h2>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            A collection of my recent work spanning UI/UX design, frontend development, and product strategy.
+            Professional websites I've created for new businesses, helping them establish their online presence and attract customers.
           </p>
         </motion.div>
 
@@ -72,7 +72,7 @@ export default function Projects() {
                         <span
                           key={tag}
                           className={`px-2 py-1 text-xs rounded ${
-                            tag === "UI/UX" || tag === "Web App"
+                            tag === "Business Website" || tag === "Responsive"
                               ? "bg-brand-primary/10 text-brand-primary"
                               : "bg-brand-secondary/10 text-brand-secondary"
                           }`}
@@ -108,7 +108,7 @@ export default function Projects() {
             whileTap={{ scale: 0.95 }}
             className="px-8 py-4 bg-white text-gray-800 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
           >
-            View All Projects
+            View All Client Websites
           </motion.button>
         </motion.div>
       </div>
