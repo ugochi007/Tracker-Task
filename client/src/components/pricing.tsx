@@ -38,6 +38,7 @@ const pricingPlans = [
   {
     name: "E-commerce Store",
     price: "$800",
+    originalPrice: "$1000",
     description: "Complete online store solution",
     features: [
       "Unlimited pages",
@@ -110,6 +111,11 @@ export default function Pricing() {
                     </p>
                     <div className={`text-4xl font-bold mb-2 ${plan.popular ? 'text-white' : 'text-brand-primary'}`}>
                       {plan.price}
+                      {plan.originalPrice && (
+                        <span className={`text-lg line-through ml-2 ${plan.popular ? 'text-gray-300' : 'text-gray-400'}`}>
+                          {plan.originalPrice}
+                        </span>
+                      )}
                     </div>
                     <p className={`text-sm ${plan.popular ? 'text-gray-200' : 'text-gray-500'}`}>
                       One-time payment

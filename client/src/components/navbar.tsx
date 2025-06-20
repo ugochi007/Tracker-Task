@@ -81,7 +81,7 @@ export default function Navbar() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="md:hidden mt-4 bg-white/10 backdrop-blur-md rounded-lg p-4"
+            className="md:hidden mt-4 bg-white/90 backdrop-blur-md rounded-lg p-4 shadow-lg"
           >
             {[
               { label: "Home", id: "hero" },
@@ -93,7 +93,7 @@ export default function Navbar() {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="block w-full text-left py-2 text-white hover:text-brand-primary transition-colors"
+                className="block w-full text-left py-2 text-gray-800 hover:text-brand-primary transition-colors"
               >
                 {item.label}
               </button>

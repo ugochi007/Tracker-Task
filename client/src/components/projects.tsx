@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { ExternalLink } from "lucide-react";
+import { Link } from "wouter";
 
 const projects = [
   {
@@ -9,23 +10,23 @@ const projects = [
     description: "Created a modern website for a new Italian restaurant featuring online menu, reservations, and location details to attract local customers.",
     image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=300",
     tags: ["Business Website", "Responsive"],
-    link: "#"
+    link: "/project/restaurant"
   },
   {
     id: 2,
     title: "Fitness Studio Website",
     description: "Built a professional website for a new fitness studio with class schedules, trainer profiles, and membership signup forms.",
-    image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=300",
+    image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=MnwxMJA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=300",
     tags: ["Business Website", "Forms"],
-    link: "#"
+    link: "/project/fitness"
   },
   {
     id: 3,
     title: "Boutique E-commerce Store",
     description: "Developed an online store for a new fashion boutique with product catalog, shopping cart, and secure payment processing.",
-    image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=300",
+    image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&ixid=MnwxMJA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=300",
     tags: ["E-commerce", "Payment"],
-    link: "#"
+    link: "/project/boutique"
   }
 ];
 
@@ -81,14 +82,15 @@ export default function Projects() {
                         </span>
                       ))}
                     </div>
-                    <motion.a
-                      href={project.link}
-                      whileHover={{ scale: 1.1 }}
-                      whileTap={{ scale: 0.9 }}
-                      className="text-brand-primary hover:text-brand-secondary transition-colors"
-                    >
-                      <ExternalLink className="w-5 h-5" />
-                    </motion.a>
+                    <Link href={project.link}>
+                      <motion.div
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.9 }}
+                        className="text-brand-primary hover:text-brand-secondary transition-colors cursor-pointer"
+                      >
+                        <ExternalLink className="w-5 h-5" />
+                      </motion.div>
+                    </Link>
                   </div>
                 </CardContent>
               </Card>
@@ -103,13 +105,15 @@ export default function Projects() {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="text-center mt-12"
         >
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="px-8 py-4 bg-white text-gray-800 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
-          >
-            View All Client Websites
-          </motion.button>
+          <Link href="/projects">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="px-8 py-4 bg-white text-gray-800 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+            >
+              View All Client Websites
+            </motion.button>
+          </Link>
         </motion.div>
       </div>
     </section>

@@ -81,8 +81,8 @@ export default function Hero() {
               <div className="relative w-80 h-80 mx-auto">
                 {/* Main Portrait */}
                 <img
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=800"
-                  alt="Benedict - Product Designer Portrait"
+                  src="/attached_assets/portfolio img_1750406141229.jpg"
+                  alt="Benedict - Web Developer Portrait"
                   className="w-full h-full object-cover rounded-full shadow-2xl"
                 />
                 
@@ -90,7 +90,7 @@ export default function Hero() {
                 <FloatingCard
                   className="absolute -top-4 -right-4 animate-float"
                   icon={<Star className="w-6 h-6 text-white" />}
-                  value="5.0"
+                  value="4.5"
                   label="Client Rating"
                   bgColor="bg-brand-primary"
                 />
@@ -98,7 +98,7 @@ export default function Hero() {
                 <FloatingCard
                   className="absolute -bottom-6 -left-6 animate-float-reverse"
                   icon={<Users className="w-6 h-6 text-white" />}
-                  value="25+"
+                  value="500+"
                   label="Websites Built"
                   bgColor="bg-brand-secondary"
                 />
