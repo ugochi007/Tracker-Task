@@ -46,16 +46,16 @@ const projectsData = {
   },
   "fitness": {
     id: 2,
-    title: "FitCore Fitness Studio",
+    title: "RISE ATHLETE STUDIO",
     description: "A dynamic website for a new fitness studio featuring class schedules, trainer profiles, membership options, and online signup forms to help build their member base.",
-    fullDescription: "FitCore was launching their first fitness studio location and needed a website that would convey energy, professionalism, and community. They wanted to showcase their trainers, class offerings, and make it easy for potential members to join.",
-    image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&h=600",
+    fullDescription: "RISE ATHLETE STUDIO was launching their first fitness studio location and needed a website that would convey energy, professionalism, and community. They wanted to showcase their trainers, class offerings, and make it easy for potential members to join.",
+    image: "/images/rise-athlete-studio.jpg",
     gallery: [
       "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
       "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
       "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400"
     ],
-    client: "FitCore Fitness Studio",
+    client: "RISE ATHLETE STUDIO",
     timeline: "4 weeks",
     category: "Business Website",
     technologies: ["HTML5", "CSS3", "JavaScript", "Form Integration"],
@@ -67,7 +67,7 @@ const projectsData = {
       "Success stories and testimonials",
       "Mobile app integration"
     ],
-    challenge: "FitCore needed to differentiate themselves in a competitive fitness market while making it easy for people to understand their class offerings and join as members.",
+    challenge: "RISE ATHLETE STUDIO needed to differentiate themselves in a competitive fitness market while making it easy for people to understand their class offerings and join as members.",
     solution: "I designed an energetic, motivational website with bold colors and dynamic imagery. The site includes an intuitive class booking system and detailed trainer profiles to build trust with potential members.",
     results: [
       "200+ new memberships signed up online in first 2 months",
@@ -78,7 +78,7 @@ const projectsData = {
     testimonial: {
       text: "The website Benedict created has been a game-changer for our business. Members love being able to book classes online, and we've seen a huge increase in signups.",
       author: "Jake Thompson",
-      position: "Owner, FitCore Fitness Studio"
+      position: "Owner, RISE ATHLETE STUDIO"
     }
   },
   "boutique": {
@@ -116,6 +116,43 @@ const projectsData = {
       text: "Benedict transformed our business! The e-commerce site he built has opened up so many new opportunities. Our online sales have exceeded all expectations.",
       author: "Sarah Chen",
       position: "Owner, Luna Fashion Boutique"
+    }
+  },
+  "coffee": {
+    id: 4,
+    title: "MIKE COFFEE SHOP",
+    description: "Artisan coffee shop website with online ordering, subscription services, and coffee education content to help build their customer base and increase sales.",
+    fullDescription: "MIKE COFFEE SHOP wanted to expand their local coffee business by offering online ordering and delivery services. They needed a website that would showcase their artisan coffee blends while providing customers with convenient ordering options.",
+    image: "/images/mike-coffee-shop.png",
+    gallery: [
+      "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
+      "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
+      "https://images.unsplash.com/photo-1509042239860-f550ce710b93?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400"
+    ],
+    client: "MIKE COFFEE SHOP",
+    timeline: "4 weeks",
+    category: "E-commerce Website",
+    technologies: ["HTML5", "CSS3", "JavaScript", "E-commerce Platform", "Payment Gateway"],
+    features: [
+      "Online coffee ordering and delivery system",
+      "Coffee subscription service setup",
+      "Coffee education blog and brewing guides",
+      "Customer loyalty program integration",
+      "Mobile-optimized ordering experience",
+      "Real-time inventory management"
+    ],
+    challenge: "MIKE COFFEE SHOP needed to transition from purely in-store sales to include online ordering while maintaining their personal touch and coffee expertise that customers loved.",
+    solution: "I created a warm, inviting website that captures the cozy atmosphere of the coffee shop. The site features easy online ordering, educational content about coffee brewing, and a subscription service for regular customers.",
+    results: [
+      "150% increase in daily sales through online orders",
+      "80+ coffee subscription customers within first month",
+      "45% reduction in phone orders due to online system",
+      "Featured in local business directory for excellent online presence"
+    ],
+    testimonial: {
+      text: "Benedict's website has revolutionized our business. We now serve customers beyond our neighborhood, and the subscription service has created steady recurring revenue.",
+      author: "Mike Rodriguez",
+      position: "Owner, MIKE COFFEE SHOP"
     }
   }
 };

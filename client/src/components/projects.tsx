@@ -14,9 +14,9 @@ const projects = [
   },
   {
     id: 2,
-    title: "Fitness Studio Website",
+    title: "RISE ATHLETE STUDIO",
     description: "Built a professional website for a new fitness studio with class schedules, trainer profiles, and membership signup forms.",
-    image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=MnwxMJA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=300",
+    image: "/images/rise-athlete-studio.jpg",
     tags: ["Business Website", "Forms"],
     link: "/project/fitness"
   },
@@ -87,6 +87,7 @@ export default function Projects() {
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}
                         className="text-brand-primary hover:text-brand-secondary transition-colors cursor-pointer"
+                        title="View Project Details"
                       >
                         <ExternalLink className="w-5 h-5" />
                       </motion.div>

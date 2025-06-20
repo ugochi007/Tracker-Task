@@ -19,11 +19,11 @@ const allProjects = [
   },
   {
     id: 2,
-    title: "FitCore Fitness Studio",
+    title: "RISE ATHLETE STUDIO",
     slug: "fitness",
     description: "A dynamic website for a new fitness studio featuring class schedules, trainer profiles, and membership signup forms.",
-    image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=MnwxMijA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=300",
-    client: "FitCore Fitness Studio",
+    image: "/images/rise-athlete-studio.jpg",
+    client: "RISE ATHLETE STUDIO",
     timeline: "4 weeks",
     category: "Business Website",
     tags: ["Fitness", "Booking", "Memberships"]
@@ -39,35 +39,14 @@ const allProjects = [
     category: "E-commerce Website",
     tags: ["Fashion", "E-commerce", "Payments"]
   },
+
   {
     id: 4,
-    title: "GreenThumb Landscaping",
-    slug: "landscaping",
-    description: "Professional website for a landscaping business showcasing services, portfolio gallery, and quote request forms.",
-    image: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300",
-    client: "GreenThumb Landscaping",
-    timeline: "2 weeks",
-    category: "Business Website",
-    tags: ["Landscaping", "Portfolio", "Quotes"]
-  },
-  {
-    id: 5,
-    title: "TechStart Solutions",
-    slug: "techstart",
-    description: "Modern corporate website for a tech startup featuring service pages, team profiles, and client testimonials.",
-    image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300",
-    client: "TechStart Solutions",
-    timeline: "5 weeks",
-    category: "Corporate Website",
-    tags: ["Technology", "Startup", "Services"]
-  },
-  {
-    id: 6,
-    title: "Coastal Coffee Roasters",
+    title: "MIKE COFFEE SHOP",
     slug: "coffee",
     description: "Artisan coffee shop website with online ordering, subscription services, and coffee education content.",
-    image: "https://images.unsplash.com/photo-1447933601403-0c6688de566e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300",
-    client: "Coastal Coffee Roasters",
+    image: "/images/mike-coffee-shop.png",
+    client: "MIKE COFFEE SHOP",
     timeline: "4 weeks",
     category: "E-commerce Website",
     tags: ["Coffee", "Subscriptions", "E-commerce"]
@@ -171,7 +150,9 @@ export default function AllProjects() {
                       <motion.button
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}
+                        onClick={() => window.open(`/project/${project.slug}`, '_blank')}
                         className="text-brand-secondary hover:text-brand-primary transition-colors"
+                        title="View Live Website"
                       >
                         <ExternalLink className="w-5 h-5" />
                       </motion.button>
