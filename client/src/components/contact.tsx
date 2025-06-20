@@ -57,43 +57,59 @@ export default function Contact() {
     setFormData(prev => ({ ...prev, projectType: value }));
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitting(true);
-
-    try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
-
-      if (response.ok) {
-        toast({
-          title: "Message sent successfully!",
-          description: "Thank you for reaching out. I'll get back to you soon.",
-        });
-        setFormData({
-          firstName: "",
-          lastName: "",
-          email: "",
-          projectType: "",
-          message: ""
-        });
-      } else {
-        throw new Error('Failed to send message');
-      }
-    } catch (error) {
+    
+    // Validate form data
+    if (!formData.firstName || !formData.lastName || !formData.email || !formData.message) {
       toast({
-        title: "Error sending message",
-        description: "Please try again later or contact me directly via email.",
+        title: "Please fill in all required fields",
+        description: "All fields are required to send your message.",
         variant: "destructive",
       });
-    } finally {
-      setIsSubmitting(false);
+      return;
     }
+
+    // Create email subject and body
+    const subject = `New ${formData.projectType || 'Website'} Inquiry from ${formData.firstName} ${formData.lastName}`;
+    const body = `Hi Benedict,
+
+I'm interested in working with you on a ${formData.projectType || 'website project'}.
+
+Name: ${formData.firstName} ${formData.lastName}
+Email: ${formData.email}
+Project Type: ${formData.projectType || 'Not specified'}
+
+Message:
+${formData.message}
+
+Looking forward to hearing from you!
+
+Best regards,
+${formData.firstName}`;
+
+    // Create mailto URL
+    const mailtoUrl = `mailto:benedictportfolios@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    
+    // Open Gmail/default email client
+    window.location.href = mailtoUrl;
+    
+    // Show success message
+    toast({
+      title: "Opening Gmail...",
+      description: "Your email client will open with the message pre-filled. Just hit send!",
+    });
+
+    // Reset form after a brief delay
+    setTimeout(() => {
+      setFormData({
+        firstName: "",
+        lastName: "",
+        email: "",
+        projectType: "",
+        message: ""
+      });
+    }, 1000);
   };
 
   return (
@@ -202,10 +218,9 @@ export default function Contact() {
                 
                 <Button
                   type="submit"
-                  disabled={isSubmitting}
                   className="w-full bg-brand-primary hover:bg-brand-primary/90 text-white text-lg py-3"
                 >
-                  {isSubmitting ? "Sending..." : "Send Message"}
+                  Send Message
                 </Button>
               </form>
             </motion.div>
