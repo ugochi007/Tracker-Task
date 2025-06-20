@@ -81,7 +81,7 @@ export default function Hero() {
               <div className="relative w-80 h-80 mx-auto">
                 {/* Main Portrait */}
                 <img
-                  src="/attached_assets/portfolio img_1750406141229.jpg"
+                  src="/images/benedict-portrait.jpg"
                   alt="Benedict - Web Developer Portrait"
                   className="w-full h-full object-cover rounded-full shadow-2xl"
                 />
